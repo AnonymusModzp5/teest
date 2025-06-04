@@ -140,6 +140,29 @@ footer {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   flex-shrink: 0;
 }
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  text-align: left;
+}
+
+.about-image {
+  width: 180px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.about-container p {
+  flex: 1;
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin: 0;
+}
+
 
 @keyframes slide-horizontal {
   0% { transform: translateX(0); }
@@ -153,5 +176,16 @@ footer {
   @keyframes slide-horizontal-mobile {
     0% { transform: translateX(0); }
     100% { transform: translateX(-100%); }
+  }
+}
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image {
+    width: 60%;
+    max-width: 250px;
   }
 }
