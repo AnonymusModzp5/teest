@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="style/style.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background: #333;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      margin: 0.5rem;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    h2, h3 {
+      text-align: center;
+    }
+
+    .about-section {
+      max-width: 960px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .about-section p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    .gallery-section {
+      text-align: center;
+      margin: 50px auto;
+      max-width: 960px;
+    }
+
+    .slideshow-container {
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+
+    .slideshow-track {
+      display: flex;
+      width: max-content;
+      animation: slide-left 30s linear infinite;
+    }
+
+    .slideshow-track img {
+      width: 80vw;
+      max-width: 300px;
+      height: auto;
+      border-radius: 12px;
+      margin-right: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      flex-shrink: 0;
+    }
+
+    @keyframes slide-left {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    .gallery-title {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+
+    .video-section {
+      padding: 20px;
+      max-width: 960px;
+      margin: auto;
+    }
+
+    .accordion-item {
+      margin-bottom: 10px;
+    }
+
+    .accordion-btn {
+      width: 100%;
+      padding: 10px;
+      font-size: 1.1em;
+      text-align: left;
+      border: none;
+      background: #e0e0e0;
+      cursor: pointer;
+      border-radius: 8px;
+    }
+
+    .accordion-content {
+      display: none;
+      padding: 10px;
+    }
+
+    .video-medium {
+      width: 100%;
+      max-width: 100%;
+      height: 315px;
+      display: block;
+      margin: 0 auto 10px;
+      border: none;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #eee;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 768px) {
+      .about-section p {
+        font-size: 1em;
+        padding: 0 10px;
+      }
+
+      .slideshow-track {
+        animation: slide-left 30s linear infinite;
+      }
+
+      .accordion-btn {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>𝕨𝕖𝕓𝕤𝕚𝕥𝕖𝕟𝕒𝕞𝕖 your choice</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pakete.html">Pakete</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Mit Leidenschaft für das Erzählen von Geschichten...</h2>
+
+    <!-- Chi Sono -->
+    <section class="about-section">
+      <h3>über mich</h3>
+      <p>Mit Leidenschaft für das Erzählen von Geschichten und einem Auge für das Wesentliche<br>
+      habe ich mich darauf spezialisiert, einzigartige Videos zu kreieren, die bewegen und<br>
+      begeistern...</p>
+    </section>
+
+    <!-- Galleria Fotografica -->
+  <!-- Inserito nella <body> -->
+<section class="gallery-section">
+  <h3>𝔾𝕒𝕝𝕖𝕣𝕚𝕖</h3>
+
+  <div class="gallery-row">
+    <h4>Familie</h4>
+    <div class="slideshow-container">
+      <div class="slideshow-track">
+         <img src="images/Famillie1.jpg" alt="Foto 1" />
+      <img src="images/Famillie2.jpg" alt="Foto 2" />
+      <img src="images/Famillie3.jpg" alt="Foto 3" />
+      <img src="images/Famillie4.jpg" alt="Foto 1 duplicate" />
+      <img src="images/Famillie5.jpg" alt="Foto 2 duplicate" />
+      <img src="images/Famillie6.jpg" alt="Foto 3 duplicate" />
+      <img src="images/Famillie7.jpg" alt="Foto 3 duplicate" />
+      </div>
+    </div>
+  </div>
+
+  <div class="gallery-row">
+    <h4>Hochzeit</h4>
+    <div class="slideshow-container">
+      <div class="slideshow-track">
+        <img src="images/hochzeit1.jpg" alt="Business 1" />
+        <img src="images/hochzeit2.jpg" alt="Business 2" />
+        <img src="images/hochzeit3.jpg" alt="Business 3" />
+         <img src="images/hochzeit4.jpg" alt="Business 4" />
+          <img src="images/hochzeit5.jpg" alt="Business 5" />
+           <img src="images/hochzeit6.jpg" alt="Business 6" />
+            <img src="images/hochzeit7.jpg" alt="Business 7" />
+             <img src="images/hochzeit8.jpg" alt="Business 8" />
+              <img src="images/hochzeit9.jpg" alt="Business 9" />
+               <img src="images/hochzeit10.jpg" alt="Business 10" />
+                <img src="images/hochzeit11.jpg" alt="Business 11" />
+                 <img src="images/hochzeit12.jpg" alt="Business 12" />
+                  <img src="images/hochzeit13.jpg" alt="Business 13" />
+      </div>
+    </div>
+  </div>
+
+  <div class="gallery-row">
+    <h4>Interview</h4>
+    <div class="slideshow-container">
+      <div class="slideshow-track">
+        <img src="images/Interview1.jpg" alt="Sport 1" />
+      </div>
+    </div>
+  </div>
+
+  <div class="gallery-row">
+    <h4>Sport</h4>
+    <div class="slideshow-container">
+      <div class="slideshow-track">
+        <img src="images/Sport1.jpg" alt="Emotion 1" />
+        <img src="images/Sport2.jpg" alt="Emotion 2" />
+        <img src="images/Sport3.jpg" alt="Emotion 3" />
+        <img src="images/Sport4.jpg" alt="Emotion 4" />
+        <img src="images/Sport5.jpg" alt="Emotion 5" />
+        <img src="images/Sport6.jpg" alt="Emotion 6" />
+        <img src="images/Sport7.jpg" alt="Emotion 7" />
+        <img src="images/Sport8.jpg" alt="Emotion 8" />
+        <img src="images/Sport9.jpg" alt="Emotion 9" />
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Sezione Video -->
+    <section class="video-section">
+      <h3>𝕄𝕖𝕕𝕚𝕒</h3>
+
+      <div class="accordion-item">
+        <button class="accordion-btn">Hochzeit</button>
+        <div class="accordion-content">
+          <iframe class="video-medium" src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
+          <p>Familienmomente für die Ewigkeit...</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-btn">Business</button>
+        <div class="accordion-content">
+          <iframe class="video-medium" src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
+          <p>Setzen Sie Ihr Unternehmen professionell in Szene...</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-btn">Sport</button>
+        <div class="accordion-content">
+          <iframe class="video-medium" src="https://www.youtube.com/embed/VIDEO_ID_3" frameborder="0" allowfullscreen></iframe>
+          <p>Leidenschaft, Leistung, Persönlichkeit...</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-btn">Emotion Familie</button>
+        <div class="accordion-content">
+          <iframe class="video-medium" src="https://www.youtube.com/embed/VIDEO_ID_4" frameborder="0" allowfullscreen></iframe>
+          <p>Bewahren Sie Ihre schönsten Erinnerungen...</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Copyright © 2023</p>
+  </footer>
+
+  <script>
+    // Accordion
+    const buttons = document.querySelectorAll('.accordion-btn');
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const content = btn.nextElementSibling;
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+
+    // Restart animation on mobile using JS for smoother fallback
+    document.querySelectorAll('.slideshow-track').forEach(track => {
+      let clone = track.cloneNode(true);
+      let parent = track.parentNode;
+      parent.removeChild(track);
+      parent.appendChild(clone);
+    });
+  </script>
+</body>
+</html>
